@@ -22,4 +22,7 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #ff55ff;
 }
-  
+
+.overflow {
+    overflow-x: auto;
+}

@@ -2,6 +2,7 @@
     <?php
     include '../style/master.css';
     include '../style/table.css';
+    include '../style/modal.css';
     ?>
 </style>
 <!DOCTYPE html>
@@ -13,6 +14,9 @@
     <script src="https://kit.fontawesome.com/71dab61d8f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="overflow">
+
+    </div>
 <table>
      <caption>
          Daftar Nama Tukang
@@ -59,7 +63,7 @@ if ($result->num_rows > 0) {
              <td>$tgl_format</td>
              <td></td>
              <td>".$row["status"]."</td>
-             <td><i class=\"fas fa-user-edit\"></i></td>
+             <td><button id=myBtn><i class=\"fas fa-user-edit\"></i></button></td>
          </tr>";
          $number++;
         }
@@ -75,5 +79,6 @@ if ($result->num_rows > 0) {
 
     </tbody>
  </table>
+ <script src="/proyek-medan/javascript/modal.js"></script>
 </body>
 </html>
