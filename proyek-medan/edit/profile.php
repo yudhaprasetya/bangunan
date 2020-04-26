@@ -69,7 +69,7 @@ if (!empty($_REQUEST["proses"])) {
     </table>
     
     <div class=\"center\">
-      <button onclick=\"goBack()\" style=\"width:auto;\">Ubah Profile</button>
+      <button onclick=\"goBack()\" style=\"width:auto;\">Kembali</button>
       <button onclick=\"document.getElementById('id01').style.display='block'\" style=\"width:auto;\">Ubah Profile</button>
     </div>
 
@@ -81,7 +81,9 @@ if (!empty($_REQUEST["proses"])) {
         </div>
 
         <div class=\"container\">
-          <input type=\"text\" value=".$id." name=\"id\" hidden>
+          <label for=\"id\"><b>Nomor ID</b></label>
+          <input type=\"text\" value=".$id." name=\"id\" disabled>
+
           <label for=\"uname\"><b>Nama Lengkap</b></label>
           <input type=\"text\" placeholder=\"Masukkan Nama Lengkap\" value=".$nama." name=\"uname\" required>
 
