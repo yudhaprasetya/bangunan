@@ -66,9 +66,6 @@ if (!empty($_REQUEST["proses"])) {
         <td>Tanggal Masuk</td>
         <td>".$waktu."</td>
     </tr>
-    <tr>
-      <td class=\"center\" colspan=\"2\"></td>
-    </tr>
     </table>
     
     <button onclick=\"document.getElementById('id01').style.display='block'\" style=\"width:auto;\">Ubah Profile</button>
@@ -99,12 +96,12 @@ if (!empty($_REQUEST["proses"])) {
             <option value=\"aktif\">Masih Aktif</option>
             <option value=\"nonaktif\">Tidak Aktif</option>
           </select>
-              
-          <button type=\"submit\">Ganti Sekarang</button>
+
         </div>
 
         <div class=\"container\" style=\"background-color:#f1f1f1\">
           <button type=\"button\" onclick=\"document.getElementById('id01').style.display='none'\" class=\"cancelbtn\">Batal</button>
+          <button type=\"submit\">Ganti Sekarang</button>
         </div>
       </form>
     </div>";
