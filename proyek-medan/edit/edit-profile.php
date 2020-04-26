@@ -68,7 +68,7 @@ if (!empty($_REQUEST["proses"])) {
     </tr>
     </table>
     
-    <button onclick=\"document.getElementById('id01').style.display='block'\" style=\"width:auto;\">Ubah Profile</button>
+    <button class=\"center\" onclick=\"document.getElementById('id01').style.display='block'\" style=\"width:auto;\">Ubah Profile</button>
 
     <div id=\"id01\" class=\"modal\">
       
@@ -99,8 +99,8 @@ if (!empty($_REQUEST["proses"])) {
 
         </div>
 
-        <div class=\"container\" style=\"background-color:#f1f1f1\">
-          <button type=\"button\" onclick=\"document.getElementById('id01').style.display='none'\" class=\"cancelbtn\">Batal</button>
+        <div class=\"container center\" style=\"background-color:#f1f1f1\">
+          <button type=\"button\" onclick=\"document.getElementById('id01').style.display='none'\">Batal</button>
           <button type=\"submit\">Ganti Sekarang</button>
         </div>
       </form>
