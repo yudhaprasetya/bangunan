@@ -1,7 +1,7 @@
-
 <style>
     <?php
     include '../style/profile.css';
+    include '../style/modal.css';
     ?>
 </style>
 
@@ -13,8 +13,6 @@
     <title>Edit Profile Tukang Bangunan</title>
 </head>
 <body>
-
-<table>
 
 <?php
 require '../admin/conn.php';
@@ -37,6 +35,7 @@ if (!empty($_REQUEST["proses"])) {
     }
 
     echo "
+    <table>
     <caption>
     <div class=\"box\">".$foto."</div>
     </caption>
@@ -64,18 +63,54 @@ if (!empty($_REQUEST["proses"])) {
     <tr>
         <td>Tanggal Masuk</td>
         <td>".$waktu."</td>
-    </tr>";
+    </tr>
+    <tr>
+      <td class=\"center\" colspan=\"2\"></td>
+    </tr>
+    </table>
+    
+    <button onclick=\"document.getElementById('id01').style.display='block'\" style=\"width:auto;\">Ubah Profile</button>
 
-    } else {
-      // code...
-      echo "
-      <tr>
-        <td>Tidak Ada</td>
-      </tr>";
-  }
+    <div id=\"id01\" class=\"modal\">
+      
+      <form class=\"modal-content animate\" action=\"/action_page.php\" method=\"post\">
+        <div class=\"imgcontainer\">
+          <span onclick=\"document.getElementById('id01').style.display='none'\" class=\"close\" title=\"Close Modal\">&times;</span>
+          <img src=\"img_avatar2.png\" alt=\"Avatar\" class=\"avatar\">
+        </div>
+
+        <div class=\"container\">
+          <label for=\"uname\"><b>Nama Lengkap</b></label>
+          <input type=\"text\" placeholder=\"Masukkan Nama Lengkap\" value=".$nama." name=\"uname\" required>
+
+          <label for=\"jabatan\"><b>Jabatan</b></label>
+          <input type=\"text\" placeholder=\"Masukkan Jabatan\" value=".$jabatan." name=\"jabatan\" required>
+            
+          <label for=\"gaji\"><b>Gaji per Hari</b></label>
+          <input type=\"text\" placeholder=\"Masukkan Gaji Per Hari\" value=".$row['upah']." name=\"gaji\" required>
+            
+          <label for=\"tanggal\"><b>Tanggal Masuk</b></label>
+          <input type=\"date\" name=\"tanggal\" value=".$row['tgl_masuk']." required>
+            
+          <label for=\"status\"><b>Status Pekerja</b></label>
+          <select name=\"status\">
+            <option value=\"aktif\">Masih Aktif</option>
+            <option value=\"nonaktif\">Tidak Aktif</option>
+          </select>
+              
+          <button type=\"submit\">Ganti Sekarang</button>
+        </div>
+
+        <div class=\"container\" style=\"background-color:#f1f1f1\">
+          <button type=\"button\" onclick=\"document.getElementById('id01').style.display='none'\" class=\"cancelbtn\">Batal</button>
+        </div>
+      </form>
+    </div>";
+    }
     $conn->close();
   }
   ?>
-</table>
+
+<script src="../javascript/modal.js"></script>
 </body>
 </html>
