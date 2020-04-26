@@ -13,7 +13,7 @@ td {
 
 th, td {
     border: 1px solid lightseagreen;
-    padding: 8px;
+    padding: 4px;
 }
 
 tr:nth-child(even) {
