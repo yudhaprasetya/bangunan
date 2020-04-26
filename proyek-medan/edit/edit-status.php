@@ -32,7 +32,6 @@
              <th>Tanggal Masuk</th>
              <th>Alamat</th>
              <th>Status</th>
-             <th>Edit</th>
          </tr>
      </thead>
      <tbody>
@@ -57,13 +56,12 @@ if ($result->num_rows > 0) {
          <tr>
              <td>".$number."</td>
              <td>".$row["id"]."</td>
-             <td>".$row["nama_karyawan"]."</td>
+             <td><a href=\"edit-profile.php?proses=".$row["nama_karyawan"]."\">".$row["nama_karyawan"]."</a></td>
              <td>".$row["jabatan"]."</td>
              <td>Rp ".$rp_upah."</td>
              <td>$tgl_format</td>
              <td></td>
              <td>".$row["status"]."</td>
-             <td><button id=myBtn><i class=\"fas fa-user-edit\"></i></button></td>
          </tr>";
          $number++;
         }
@@ -76,29 +74,7 @@ if ($result->num_rows > 0) {
     }
     $conn->close();
     ?>
-
     </tbody>
  </table>
-
- <!-- The Modal -->
-<div id="myModal" class="modal">
-
-<!-- Modal content -->
-<div class="modal-content">
-  <div class="modal-header">
-    <span class="close">&times;</span>
-    <h2>Modal Header</h2>
-  </div>
-  <div class="modal-body">
-    <p>Some text in the Modal Body</p>
-    <p>Some other text...</p>
-  </div>
-  <div class="modal-footer">
-    <h3>Modal Footer</h3>
-  </div>
-</div>
-
-</div>
- <script src="/proyek-medan/javascript/modal.js"></script>
 </body>
 </html>
