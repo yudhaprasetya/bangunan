@@ -19,7 +19,7 @@ require '../admin/conn.php';
 if (!empty($_REQUEST["proses"])) {
   $proses = addslashes($_REQUEST['proses']);
 
-  $sql = "SELECT id, nama_karyawan, foto, jabatan, upah, tgl_masuk, status FROM tukang WHERE nama_karyawan='$proses'";
+  $sql = "SELECT id, nama_karyawan, foto, jabatan, upah, tgl_masuk, status FROM tukang WHERE id='$proses'";
   $result = $conn->query($sql);
 
   if ($result->num_rows > 0) {
@@ -81,6 +81,7 @@ if (!empty($_REQUEST["proses"])) {
         </div>
 
         <div class=\"container\">
+          <input type=\"text\" value=".$id." name=\"id\" hidden>
           <label for=\"uname\"><b>Nama Lengkap</b></label>
           <input type=\"text\" placeholder=\"Masukkan Nama Lengkap\" value=".$nama." name=\"uname\" required>
 

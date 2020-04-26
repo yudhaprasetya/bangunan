@@ -56,7 +56,7 @@ if ($result->num_rows > 0) {
          <tr>
              <td>".$number."</td>
              <td>".$row["id"]."</td>
-             <td><a href=\"profile.php?proses=".$row["nama_karyawan"]."\">".$row["nama_karyawan"]."</a></td>
+             <td><a href=\"profile.php?proses=".$row["id"]."\">".$row["nama_karyawan"]."</a></td>
              <td>".$row["jabatan"]."</td>
              <td>Rp ".$rp_upah."</td>
              <td>$tgl_format</td>
