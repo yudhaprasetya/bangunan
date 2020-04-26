@@ -59,7 +59,7 @@ if ($result->num_rows > 0) {
              <td>$tgl_format</td>
              <td></td>
              <td>".$row["status"]."</td>
-             <td><i class="fas fa-user-edit"></i></td>
+             <td><i class=\"fas fa-user-edit\"></i></td>
          </tr>";
          $number++;
         }
