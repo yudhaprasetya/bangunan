@@ -29,8 +29,10 @@ if (!empty($_REQUEST["proses"])) {
       $id = $row['id'];
       $foto = $row['foto'];
       $jabatan = $row['jabatan'];
+      $upah = $row['upah'];
       $rp_upah = number_format(floatval($row['upah']));
       $waktu = date("d F Y", strtotime($row['tgl_masuk']));
+      $tgl_masuk = $row['tgl_masuk'];
       $status = $row['status'];
     }
 
@@ -87,10 +89,10 @@ if (!empty($_REQUEST["proses"])) {
           <input type=\"text\" placeholder=\"Masukkan Jabatan\" value=".$jabatan." name=\"jabatan\" required>
             
           <label for=\"gaji\"><b>Gaji per Hari</b></label>
-          <input type=\"text\" placeholder=\"Masukkan Gaji Per Hari\" value=\"".$row['upah']."\" name=\"gaji\" required>
+          <input type=\"number\" placeholder=\"Masukkan Gaji Per Hari\" value=".$upah." name=\"gaji\" required>
             
           <label for=\"tanggal\"><b>Tanggal Masuk</b></label>
-          <input type=\"date\" name=\"tanggal\" value=\"".$row['tgl_masuk']."\" required>
+          <input type=\"date\" name=\"tanggal\" value=".$tgl_masuk." required>
             
           <label for=\"status\"><b>Status Pekerja</b></label>
           <select name=\"status\">
