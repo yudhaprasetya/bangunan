@@ -10,7 +10,6 @@
 <!-- Sql Select for PHP -->
 
 <?php
-/*
 require_once '../admin/conn.php';
 $sql = "SELECT id, nama_karyawan, jabatan, upah, tgl_masuk, status FROM tukang ORDER BY nama_karyawan ASC";
 $result = $conn->query($sql);
@@ -25,7 +24,7 @@ if ($result->num_rows > 0) {
         $rp_upah = number_format(floatval($row['upah']));
     }
 }
-$conn->close(); */
+$conn->close();
 ?>
 
  <table>
