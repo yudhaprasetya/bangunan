@@ -1,11 +1,15 @@
+<style>
+    <?php
+    include '../style/master.css';
+    include '../style/table.css';
+    ?>
+</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Nama Tukang</title>
-    <link rel="stylesheet" href="../style/master.css">
-    <link rel="stylesheet" href="../style/table.css">
 </head>
 <body>
 <table>
