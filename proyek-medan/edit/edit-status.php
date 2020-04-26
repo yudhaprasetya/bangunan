@@ -10,6 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Nama Tukang</title>
+    <script src="https://kit.fontawesome.com/71dab61d8f.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <table>
@@ -27,6 +28,7 @@
              <th>Tanggal Masuk</th>
              <th>Alamat</th>
              <th>Status</th>
+             <th>Edit</th>
          </tr>
      </thead>
      <tbody>
@@ -57,6 +59,7 @@ if ($result->num_rows > 0) {
              <td>$tgl_format</td>
              <td></td>
              <td>".$row["status"]."</td>
+             <td><i class="fas fa-user-edit"></i></td>
          </tr>";
          $number++;
         }
