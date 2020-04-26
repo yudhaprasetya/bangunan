@@ -87,10 +87,10 @@ if (!empty($_REQUEST["proses"])) {
           <input type=\"text\" placeholder=\"Masukkan Jabatan\" value=".$jabatan." name=\"jabatan\" required>
             
           <label for=\"gaji\"><b>Gaji per Hari</b></label>
-          <input type=\"text\" placeholder=\"Masukkan Gaji Per Hari\" value=".$row['upah']." name=\"gaji\" required>
+          <input type=\"text\" placeholder=\"Masukkan Gaji Per Hari\" value=\"".$row['upah']."\" name=\"gaji\" required>
             
           <label for=\"tanggal\"><b>Tanggal Masuk</b></label>
-          <input type=\"date\" name=\"tanggal\" value=".$row['tgl_masuk']." required>
+          <input type=\"date\" name=\"tanggal\" value=\"".$row['tgl_masuk']."\" required>
             
           <label for=\"status\"><b>Status Pekerja</b></label>
           <select name=\"status\">
