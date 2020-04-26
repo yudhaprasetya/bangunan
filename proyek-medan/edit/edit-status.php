@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Nama Tukang</title>
-    <link rel="stylesheet" href="/proyek-medan/style/master.css">
-    <link rel="stylesheet" href="/proyek-medan/style/table.css">
+    <link rel="stylesheet" href="../style/master.css">
+    <link rel="stylesheet" href="../style/table.css">
 </head>
 <body>
 <table>
