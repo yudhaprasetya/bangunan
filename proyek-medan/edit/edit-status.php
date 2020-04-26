@@ -48,7 +48,7 @@ if ($result->num_rows > 0) {
              <td>".$row["nama_karyawan"]."</td>
              <td>".$row["jabatan"]."</td>
              <td>Rp ".$rp_upah."</td>
-             <td>"$tgl_format"</td>
+             <td>$tgl_format</td>
              <td></td>
              <td>".$row["status"]."</td>
          </tr>";
