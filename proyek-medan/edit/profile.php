@@ -68,11 +68,14 @@ if (!empty($_REQUEST["proses"])) {
     </tr>
     </table>
     
-    <button class=\"center\" onclick=\"document.getElementById('id01').style.display='block'\" style=\"width:auto;\">Ubah Profile</button>
+    <div class=\"center\">
+      <button onclick=\"goBack()\" style=\"width:auto;\">Ubah Profile</button>
+      <button onclick=\"document.getElementById('id01').style.display='block'\" style=\"width:auto;\">Ubah Profile</button>
+    </div>
 
     <div id=\"id01\" class=\"modal\">
       
-      <form class=\"modal-content animate\" action=\"/action_page.php\" method=\"post\">
+      <form class=\"modal-content animate\" action=\"update-profile.php\" method=\"post\">
         <div class=\"imgcontainer\">
           <span onclick=\"document.getElementById('id01').style.display='none'\" class=\"close\" title=\"Close Modal\">&times;</span>
         </div>
@@ -100,7 +103,7 @@ if (!empty($_REQUEST["proses"])) {
 
         <div class=\"container center\" style=\"background-color:#f1f1f1\">
           <button type=\"button\" onclick=\"document.getElementById('id01').style.display='none'\">Batal</button>
-          <button type=\"submit\">Ganti Sekarang</button>
+          <button type=\"submit\" name=\"change\">Ganti Sekarang</button>
         </div>
       </form>
     </div>";
@@ -110,5 +113,6 @@ if (!empty($_REQUEST["proses"])) {
   ?>
 
 <script src="../javascript/modal.js"></script>
+<script src="../javascript/prev.js"></script>
 </body>
 </html>
