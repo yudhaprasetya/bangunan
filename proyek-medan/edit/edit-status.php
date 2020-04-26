@@ -46,8 +46,8 @@ $conn->close(); */
      </thead>
      <tbody>
          <tr>
-             <td><?php echo .$number. ?></td>
-             <td><?php echo .$row["nama_karyawan"]. ?></td>
+             <td><?php echo $number ?></td>
+             <td><?php echo $row["nama_karyawan"] ?></td>
              <td><?php echo $row["jabatan"] ?></td>
              <td><?php echo $row["upah"] ?></td>
              <td><?php echo $tgl_format ?></td>
