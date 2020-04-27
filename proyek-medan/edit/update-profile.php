@@ -7,11 +7,9 @@ if (isset($_POST["change"])) {
     $jabatan = $_POST['jabatan'];
     $gaji = $_POST['gaji'];
     $tanggal = $_POST['tanggal'];
-    $status = $_POST['status'];
-    date_default_timezone_set("Asia/Jakarta");
-    $now = date("Y-m-d H:i:s");
+    $status_aktif = $_POST['status_aktif'];
 
-  $sql = "UPDATE tukang SET nama_karyawan = '$nama', jabatan = '$jabatan', upah = '$gaji', tgl_masuk = '$tanggal', status = '$status' WHERE id='$id'";
+  $sql = "UPDATE tukang SET nama_karyawan = '$nama', jabatan = '$jabatan', upah = '$gaji', tgl_masuk = '$tanggal', status_aktif = '$status_aktif' WHERE id='$id'";
   mysqli_select_db($conn, $sql);
   $retval = mysqli_query($conn, $sql);
 
