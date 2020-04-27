@@ -111,7 +111,6 @@ if (!empty($_REQUEST["proses"])) {
       </form>
     </div>";
     }
-    $conn->close();
   }
   ?>
 
