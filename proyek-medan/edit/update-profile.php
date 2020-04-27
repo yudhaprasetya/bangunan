@@ -7,6 +7,7 @@ if (isset($_POST["change"])) {
     $jabatan = $_POST['jabatan'];
     $gaji = $_POST['gaji'];
     $tanggal = $_POST['tanggal'];
+    $tgl_indo = date("Y-m-d, $tanggal");
     $status_aktif = $_POST['status_aktif'];
 
   $sql = "UPDATE tukang SET nama_karyawan = '$nama', jabatan = '$jabatan', upah = '$gaji', tgl_masuk = '$tanggal', status_aktif = '$status_aktif' WHERE id='$id'";
