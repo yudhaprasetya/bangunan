@@ -19,7 +19,7 @@ require '../admin/conn.php';
 if (!empty($_REQUEST["proses"])) {
   $proses = addslashes($_REQUEST['proses']);
 
-  $sql = "SELECT id, nama_karyawan, foto, jabatan, upah, tgl_masuk, status FROM tukang WHERE id='$proses'";
+  $sql = "SELECT id, nama_karyawan, foto, jabatan, upah, tgl_masuk, status_aktif FROM tukang WHERE id='$proses'";
   $result = $conn->query($sql);
 
   if ($result->num_rows > 0) {
@@ -33,7 +33,7 @@ if (!empty($_REQUEST["proses"])) {
       $rp_upah = number_format(floatval($row['upah']));
       $waktu = date("d F Y", strtotime($row['tgl_masuk']));
       $tgl_masuk = $row['tgl_masuk'];
-      $status = $row['status'];
+      $status_aktif = $row['status_aktif'];
     }
 
     echo "
@@ -60,7 +60,7 @@ if (!empty($_REQUEST["proses"])) {
     </tr>
     <tr>
         <td>Status</td>
-        <td>".$status."</td>
+        <td>".$status_aktif."</td>
     </tr>
     <tr>
         <td>Tanggal Masuk</td>
@@ -96,8 +96,8 @@ if (!empty($_REQUEST["proses"])) {
           <label for=\"tanggal\"><b>Tanggal Masuk</b></label>
           <input type=\"date\" name=\"tanggal\" value=\"".$tgl_masuk."\" required>
             
-          <label for=\"status\"><b>Status Pekerja</b></label>
-          <select name=\"status\">
+          <label for=\"status_aktif\"><b>Status Pekerja</b></label>
+          <select name=\"status_aktif\">
             <option value=\"aktif\">Masih Aktif</option>
             <option value=\"nonaktif\">Tidak Aktif</option>
           </select>
