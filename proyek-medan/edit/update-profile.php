@@ -9,7 +9,7 @@ if (isset($_POST["add"])) {
     $tanggal = $_POST['tanggal'];
     $status_aktif = $_POST['status_aktif'];
 
-  $sql = "UPDATE tukang SET nama_karyawan='$nama', jabatan='$jabatan', upah='$gaji', tgl_masuk='$tanggal', status_aktif='$status_aktif' WHERE id=$id";
+  $sql = "UPDATE tukang SET nama_karyawan='$nama', jabatan='$jabatan', upah='$gaji', tgl_masuk='$tanggal', status_aktif='$status_aktif' WHERE id='$id'";
   mysqli_select_db($conn, $sql);
   $retval = mysqli_query($conn, $sql);
 
