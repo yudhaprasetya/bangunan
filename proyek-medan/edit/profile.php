@@ -82,7 +82,8 @@ include '../style/modal.css';
 
       <div class=\"container\">
         <label><b>Nomor ID</b></label>
-        <input hidden type=\"text\" value=\"".$id."\" name=\"id\">
+        <input dissabled type=\"text\" value=\"".$id."\">
+        <input type=\"hidden\" value=\"".$id."\" name=\"id\">
 
         <label><b>Nama Lengkap</b></label>
         <input type=\"text\" value=\"".$nama."\" name=\"uname\" required>
