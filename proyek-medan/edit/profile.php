@@ -102,11 +102,11 @@ if (!empty($_REQUEST["proses"])) {
             <option value=\"nonaktif\">Tidak Aktif</option>
           </select>
 
+          <button type=\"submit\" name=\"change\">Ganti Sekarang</button>
         </div>
 
         <div class=\"container center\" style=\"background-color:#f1f1f1\">
           <button type=\"button\" onclick=\"document.getElementById('id01').style.display='none'\">Batal</button>
-          <button type=\"submit\" name=\"change\">Ganti Sekarang</button>
         </div>
       </form>
     </div>";
