@@ -82,19 +82,19 @@ if (!empty($_REQUEST["proses"])) {
 
         <div class=\"container\">
           <label for=\"id\"><b>Nomor ID</b></label>
-          <input type=\"text\" value=".$id." name=\"id\" disabled>
+          <input type=\"text\" value=\"".$id."\" name=\"id\" disabled>
 
           <label for=\"uname\"><b>Nama Lengkap</b></label>
-          <input type=\"text\" placeholder=\"Masukkan Nama Lengkap\" value=".$nama." name=\"uname\" required>
+          <input type=\"text\" placeholder=\"Masukkan Nama Lengkap\" value=\"".$nama."\" name=\"uname\" required>
 
           <label for=\"jabatan\"><b>Jabatan</b></label>
-          <input type=\"text\" placeholder=\"Masukkan Jabatan\" value=".$jabatan." name=\"jabatan\" required>
+          <input type=\"text\" placeholder=\"Masukkan Jabatan\" value=\"".$jabatan."\" name=\"jabatan\" required>
             
           <label for=\"gaji\"><b>Gaji per Hari</b></label>
-          <input type=\"number\" placeholder=\"Masukkan Gaji Per Hari\" value=".$upah." name=\"gaji\" required>
+          <input type=\"number\" placeholder=\"Masukkan Gaji Per Hari\" value=\"".$upah."\" name=\"gaji\" required>
             
           <label for=\"tanggal\"><b>Tanggal Masuk</b></label>
-          <input type=\"date\" name=\"tanggal\" value=".$tgl_masuk." required>
+          <input type=\"date\" name=\"tanggal\" value=\"".$tgl_masuk."\" required>
             
           <label for=\"status\"><b>Status Pekerja</b></label>
           <select name=\"status\">
