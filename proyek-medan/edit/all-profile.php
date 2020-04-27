@@ -40,7 +40,7 @@
 
 <?php
 require_once '../admin/conn.php';
-$sql = "SELECT id, nama_karyawan, jabatan, upah, tgl_masuk, status FROM tukang ORDER BY nama_karyawan ASC";
+$sql = "SELECT id, nama_karyawan, jabatan, upah, tgl_masuk, status_aktif FROM tukang ORDER BY nama_karyawan ASC";
 $result = $conn->query($sql);
 $number = 1;
 
@@ -61,7 +61,7 @@ if ($result->num_rows > 0) {
              <td>Rp ".$rp_upah."</td>
              <td>$tgl_format</td>
              <td></td>
-             <td>".$row["status"]."</td>
+             <td>".$row["status_aktif"]."</td>
          </tr>";
          $number++;
         }
