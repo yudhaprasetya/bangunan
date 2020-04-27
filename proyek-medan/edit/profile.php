@@ -85,13 +85,13 @@ if (!empty($_REQUEST["proses"])) {
           <input type=\"text\" value=\"".$id."\" name=\"id\" disabled>
 
           <label><b>Nama Lengkap</b></label>
-          <input type=\"text\" placeholder=\"Masukkan Nama Lengkap\" value=\"".$nama."\" name=\"uname\" required>
+          <input type=\"text\" value=\"".$nama."\" name=\"uname\" required>
 
           <label><b>Jabatan</b></label>
-          <input type=\"text\" placeholder=\"Masukkan Jabatan\" value=\"".$jabatan."\" name=\"jabatan\" required>
+          <input type=\"text\" value=\"".$jabatan."\" name=\"jabatan\" required>
             
           <label><b>Gaji per Hari</b></label>
-          <input type=\"number\" placeholder=\"Masukkan Gaji Per Hari\" value=\"".$upah."\" name=\"gaji\" required>
+          <input type=\"number\" value=\"".$upah."\" name=\"gaji\" required>
             
           <label><b>Tanggal Masuk</b></label>
           <input type=\"date\" name=\"tanggal\" value=\"".$tgl_masuk."\" required>
@@ -106,7 +106,7 @@ if (!empty($_REQUEST["proses"])) {
 
         <div class=\"container center\" style=\"background-color:#f1f1f1\">
           <button type=\"button\" onclick=\"document.getElementById('id01').style.display='none'\">Batal</button>
-          <button type=\"submit\" name=\"change\">Ganti Sekarang</button>
+          <button type=\"submit\" name=\"add\">Ganti Sekarang</button>
         </div>
       </form>
     </div>";
