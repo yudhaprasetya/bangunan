@@ -14,9 +14,15 @@ if (isset($_POST["add"])) {
   $retval = mysqli_query($conn, $sql);
 
   if ($conn->query($sql) === TRUE) {
-    echo "Record updated successfully";
+    echo "<script>
+    location.replace(\"profile.php?proses=$id\");
+    alert(\"Perubahan Data Berhasil!\");
+    </script>";
   } else {
-    echo "Error updating record: " . $conn->error;
+    echo "<script>
+    location.replace(\"profile.php?proses=$id\");
+    alert(\"Perubahan Data Gagal!\");
+    </script>" . $conn->error;
   }
 
   $conn->close();
