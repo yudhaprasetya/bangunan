@@ -81,32 +81,32 @@ if (!empty($_REQUEST["proses"])) {
         </div>
 
         <div class=\"container\">
-          <label for=\"id\"><b>Nomor ID</b></label>
+          <label><b>Nomor ID</b></label>
           <input type=\"text\" value=\"".$id."\" name=\"id\" disabled>
 
-          <label for=\"uname\"><b>Nama Lengkap</b></label>
+          <label><b>Nama Lengkap</b></label>
           <input type=\"text\" placeholder=\"Masukkan Nama Lengkap\" value=\"".$nama."\" name=\"uname\" required>
 
-          <label for=\"jabatan\"><b>Jabatan</b></label>
+          <label><b>Jabatan</b></label>
           <input type=\"text\" placeholder=\"Masukkan Jabatan\" value=\"".$jabatan."\" name=\"jabatan\" required>
             
-          <label for=\"gaji\"><b>Gaji per Hari</b></label>
+          <label><b>Gaji per Hari</b></label>
           <input type=\"number\" placeholder=\"Masukkan Gaji Per Hari\" value=\"".$upah."\" name=\"gaji\" required>
             
-          <label for=\"tanggal\"><b>Tanggal Masuk</b></label>
+          <label><b>Tanggal Masuk</b></label>
           <input type=\"date\" name=\"tanggal\" value=\"".$tgl_masuk."\" required>
             
-          <label for=\"status_aktif\"><b>Status Pekerja</b></label>
+          <label><b>Status Pekerja</b></label>
           <select name=\"status_aktif\">
-            <option value=\"aktif\">Masih Aktif</option>
-            <option value=\"nonaktif\">Tidak Aktif</option>
+            <option value=\"Masih Aktif\">Masih Aktif</option>
+            <option value=\"Tidak Aktif\">Tidak Aktif</option>
           </select>
 
-          <button type=\"submit\" name=\"change\">Ganti Sekarang</button>
         </div>
 
         <div class=\"container center\" style=\"background-color:#f1f1f1\">
           <button type=\"button\" onclick=\"document.getElementById('id01').style.display='none'\">Batal</button>
+          <button type=\"submit\" name=\"change\">Ganti Sekarang</button>
         </div>
       </form>
     </div>";

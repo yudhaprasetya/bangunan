@@ -18,13 +18,13 @@ if (isset($_POST["change"])) {
 
     echo "<script>
     alert(\"Perubahan Data Gagal!\");
-    location.replace(\"profile.php?proses=".$id."\");
+    location.replace(\"profile.php?proses=$id\");
     </script>";
   }
 
   echo "<script>
   alert(\"Perubahan Data Berhasil!\");
-  location.replace(\"profile.php?proses=".$id."\");
+  location.replace(\"profile.php?proses=$id\");
   </script>";
 }
 ?>
