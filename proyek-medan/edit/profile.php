@@ -82,7 +82,7 @@ include '../style/modal.css';
 
       <div class=\"container\">
         <label><b>Nomor ID</b></label>
-        <input type=\"text\" value=\"".$id."\" name=\"id\" disabled>
+        <input type=\"text\" value=\"".$id."\" name=\"id\">
 
         <label><b>Nama Lengkap</b></label>
         <input type=\"text\" value=\"".$nama."\" name=\"uname\" required>

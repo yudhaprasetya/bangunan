@@ -57,7 +57,7 @@ include '../style/modal.css';
           <tr>
             <td>".$number."</td>
             <td>".$row["id"]."</td>
-            <td><a href=\"ubah-profile.php?proses=".$row["id"]."\">".$row["nama_karyawan"]."</a></td>
+            <td><a href=\"profile.php?proses=".$row["id"]."\">".$row["nama_karyawan"]."</a></td>
             <td>".$row["jabatan"]."</td>
             <td>Rp ".$rp_upah."</td>
             <td>$tgl_format</td>
