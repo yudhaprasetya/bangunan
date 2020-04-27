@@ -8,8 +8,10 @@ if (isset($_POST["change"])) {
     $gaji = $_POST['gaji'];
     $tanggal = $_POST['tanggal'];
     $status = $_POST['status'];
+    date_default_timezone_set("Asia/Jakarta");
+    $now = date("Y-m-d H:i:s");
 
-  $sql = "UPDATE tukang SET nama_karyawan = '$nama', jabatan = '$jabatan', upah = '$gaji', tgl_masuk = '$tanggal', status = '$status' WHERE id='$id'";
+  $sql = "UPDATE tukang SET nama_karyawan = '$nama', jabatan = '$jabatan', upah = '$gaji', tgl_masuk = '$tanggal', status = '$status', create_date = '$now' WHERE id='$id'";
   mysqli_select_db($conn, $sql);
   $retval = mysqli_query($conn, $sql);
 
