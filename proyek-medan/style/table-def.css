@@ -1,6 +1,6 @@
 table {
     width: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 th {
@@ -15,7 +15,7 @@ th, td {
     padding: 4px;
 }
 tr:hover {
-    background-color: darkslategey;
+    background-color: darkslategrey;
     color: white;
 }
 
