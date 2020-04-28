@@ -15,7 +15,7 @@ if (isset($_POST["add"])) {
 
   if ($conn->query($sql) === TRUE) {
     echo "<script>
-    alert(\"Berhasil\") && window.location=\"profile.php?proses=$id\";
+    alert(\"Berhasil\") && window.location=\"http://medan.proyekbangunan.epizy.com/proyek-medan/edit/profile.php?proses=$id\";
     </script>";
   } else {
     echo "<script>
