@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title></title>
+  <style media="screen">
+    <?php include '../style/table-def.css'; ?>
+  </style>
 </head>
 <body>
 

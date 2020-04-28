@@ -1,1 +1,3 @@
-<?php echo phpinfo ?>
+<?php
+$date = date('now');
+?>
