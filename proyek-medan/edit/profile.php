@@ -106,8 +106,8 @@ include '../style/modal.css';
       </div>
 
       <div class=\"container center\" style=\"background-color:#f1f1f1\">
-        <button type=\"button\" onclick=\"document.getElementById('id01').style.display='none'\">Batal</button>
-        <button type=\"submit\" name=\"add\">Ganti Sekarang</button>
+        <button type=\"button\" onclick=\"document.getElementById('id01').style.display='none'\">Kembali</button>
+        <button type=\"submit\" name=\"add\" onclick=\"return confirm('Apakah Data Sudah Benar?')\" >Ganti Sekarang</button>
       </div>
     </form>
   </div>";
