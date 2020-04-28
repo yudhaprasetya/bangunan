@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyek Bangunan - Medan</title>
-    <link rel="stylesheet" type="text/css" href="/proyek-medan/style/master.css">
+    <link rel="stylesheet" type="text/css" href="style/master.css">
+    <link href="{{ asset('style/master.css') }}" rel="stylesheet" type="text/css" />
   </head>
   <body>
 
@@ -19,7 +20,7 @@
 
     </div>
 
-    <a href="gaji/absen.php?<?php echo "$sabtu"; ?>">Absensi Gaji</a>
+    <a href="gaji/absen.php?tanggal=<?php echo "$sabtu"; ?>">Absensi Gaji</a>
     <a href="absen/all-profile.php">Daftar Tukang Bangunan</a>
 
   </body>

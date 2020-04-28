@@ -5,6 +5,9 @@
   <title></title>
   <style media="screen">
     <?php include '../style/table-def.css'; ?>
+    body {
+      margin: 0;
+    }
   </style>
 </head>
 <body>
