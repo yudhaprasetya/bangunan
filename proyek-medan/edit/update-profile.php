@@ -14,7 +14,8 @@ if (isset($_POST["add"])) {
   $retval = mysqli_query($conn, $sql);
 
   if ($conn->query($sql) === TRUE) {
-    echo "<script>changePage(\"profile.php?proses=$id\", \"Perubahan Data Berhasil\");
+    echo "<script>
+    alert(\"Berhasil\") && window.location=\"profile.php?proses=$id\";
     </script>";
   } else {
     echo "<script>
