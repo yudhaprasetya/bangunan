@@ -20,8 +20,8 @@ if (isset($_POST["add"])) {
   } else {
     echo "<script>
     location.replace(\"profile.php?proses=$id\");
-    alert(\"Perubahan Data Gagal!\");
-    </script>" . $conn->error;
+    alert(\"Perubahan Data Gagal!  '.$conn->error.'\");
+    </script>";
   }
 
   $conn->close();
