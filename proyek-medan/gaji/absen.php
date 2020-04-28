@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <title></title>
   <style media="screen">
-    <?php include '../style/table-def.css'; ?>
-    body {
-      margin: 0;
-    }
+  <?php
+  include '../style/table-def.css';
+  include '../style/master.css';
+  ?>
   </style>
 </head>
 <body>
@@ -200,7 +200,20 @@
           }
         }
         echo "
+
         <tfoot class=\"tfoot\">
+          <tr>
+            <th colspan=\"3\">Jumlah Absen/Lembur</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan=\"8\"></th>
+          </tr>
           <tr>
             <th class=\"tf print_hidden\" colspan=\"12\">Total / Jumlah Keseluruhan (Upah, Gaji dan Total Pendapatan) Mingguan</th>
             <th class=\"tf print_hidden\">Rp <i class=\"w3-right\">$rp_hasil_upah</i></th>

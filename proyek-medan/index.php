@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyek Bangunan - Medan</title>
-    <link rel="stylesheet" type="text/css" href="style/master.css">
-    <link href="{{ asset('style/master.css') }}" rel="stylesheet" type="text/css" />
+    <style media="screen">
+      <?php include 'style/master.css'; ?>
+    </style>
   </head>
   <body>
 
