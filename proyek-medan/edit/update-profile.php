@@ -1,4 +1,8 @@
 <?php
+header('Location: all-profile.php');
+?>
+
+<?php
 require '../admin/conn.php';
 
 if (isset($_POST["add"])) {
@@ -15,7 +19,7 @@ if (isset($_POST["add"])) {
 
   if ($conn->query($sql) === TRUE) {
     echo "<script>
-    location.replace(\"all-profile.php\");
+    alert(\"Perubahan Data Berhasil!\");
     </script>";
   } else {
     echo "<script>
