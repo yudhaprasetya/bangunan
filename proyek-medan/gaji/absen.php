@@ -77,6 +77,22 @@
     $hasil_lembur = 0;
     $hasil_gaji = 0;
 
+    $ming_abs = 0;
+    $sen_abs = 0;
+    $sel_abs = 0;
+    $rab_abs = 0;
+    $kam_abs = 0;
+    $jum_abs = 0;
+    $sab_abs = 0;
+
+    $ming_lem = 0;
+    $sen_lem = 0;
+    $sel_lem = 0;
+    $rab_lem = 0;
+    $kam_lem = 0;
+    $jum_lem = 0;
+    $sab_lem = 0;
+
     echo "
     <table>
 
@@ -147,6 +163,23 @@
           $hasil_hutang += $hutang;
           $hasil_tabungan += $tabungan;
 
+          $ming_abs += $row['hdsunday'];
+          $sen_abs += $row['hdsenin'];
+          $sel_abs += $row['hdselasa'];
+          $rab_abs += $row['hdrabu'];
+          $kam_abs += $row['hdkamis'];
+          $jum_abs += $row['hdjumat'];
+          $sab_abs += $row['hdsabtu'];
+
+          $ming_lem += $row['sunday'];
+          $sen_lem += $row['senin'];
+          $sel_lem += $row['selasa'];
+          $rab_lem += $row['rabu'];
+          $kam_lem += $row['kamis'];
+          $jum_lem += $row['jumat'];
+          $sab_lem += $row['sabtu'];
+
+
           if ($sum_absen==0) {
             # code...
             $abai = $abai+1;
@@ -198,25 +231,18 @@
             ";
             $counter++;
           }
-
-          echo "
-          <tr>
-            <th colspan=\"3\">Jumlah Absen/Lembur</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th colspan=\"8\"></th>
-          </tr>
-          ";
         }
         echo "
         <thead class=\"w3-yellow\">
-          <th colspan=\"12\">Total / Jumlah Keseluruhan (Upah, Lembur dan Total Pendapatan) Mingguan</th>
+          <th colspan=\"3\">Jumlah Absen/Lembur</th>
+          <th>$ming_abs/$ming_lem</th>
+          <th>$sen_abs/$sen_lem</th>
+          <th>$sel_abs/$sel_lem</th>
+          <th>$rab_abs/$rab_lem</th>
+          <th>$kam_abs/$kam_lem</th>
+          <th>$jum_abs/$jum_lem</th>
+          <th>$sab_abs/$sab_lem</th>
+          <th></th>
           <th>Rp <i class=\"w3-right\">$rp_hasil_upah</i></th>
           <th>Rp <i class=\"w3-right\">$rp_hasil_lembur</i></th>
           <th>Rp <i class=\"w3-right\">$rp_hasil_total_gaji</i></th>
