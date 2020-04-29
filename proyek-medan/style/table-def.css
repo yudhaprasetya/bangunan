@@ -1,6 +1,7 @@
 table {
     width: 100%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
+    border-collapse: collapse;
 }
 
 th {
@@ -8,11 +9,12 @@ th {
 }
 td {
     text-align: left;
+    white-space: nowrap;
 }
 
 th, td {
     border: 1px solid black;
-    padding: 4px;
+    padding: 2px;
 }
 tr:hover {
     background-color: darkslategrey;

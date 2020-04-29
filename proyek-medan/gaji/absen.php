@@ -242,7 +242,7 @@
           <th>$kam_abs/$kam_lem</th>
           <th>$jum_abs/$jum_lem</th>
           <th>$sab_abs/$sab_lem</th>
-          <th></th>
+          <th colspan=\"2\"></th>
           <th>Rp <i class=\"w3-right\">$rp_hasil_upah</i></th>
           <th>Rp <i class=\"w3-right\">$rp_hasil_lembur</i></th>
           <th>Rp <i class=\"w3-right\">$rp_hasil_total_gaji</i></th>
