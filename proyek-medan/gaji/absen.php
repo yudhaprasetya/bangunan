@@ -198,10 +198,8 @@
             ";
             $counter++;
           }
-        }
-        echo "
 
-        <tfoot class=\"tfoot\">
+          echo "
           <tr>
             <th colspan=\"3\">Jumlah Absen/Lembur</th>
             <th></th>
@@ -214,18 +212,9 @@
             <th></th>
             <th colspan=\"8\"></th>
           </tr>
-          <tr>
-            <th class=\"tf print_hidden\" colspan=\"12\">Total / Jumlah Keseluruhan (Upah, Gaji dan Total Pendapatan) Mingguan</th>
-            <th class=\"tf print_hidden\">Rp <i class=\"w3-right\">$rp_hasil_upah</i></th>
-            <th class=\"tf print_hidden\">Rp <i class=\"w3-right\">$rp_hasil_lembur</i></th>
-            <th class=\"tf print_hidden\">Rp <i class=\"w3-right\">$rp_hasil_total_gaji</i></th>
-            <th class=\"tf print_hidden\">Rp <i class=\"w3-right\">$rp_hasil_hutang</i></th>
-            <th class=\"tf print_hidden\">Rp <i class=\"w3-right\">$rp_hasil_tabungan</i></th>
-            <th class=\"tf print_hidden\">Rp <i class=\"w3-right\">$rp_hasil_gaji</i></th>
-            <th class=\"tf print_hidden\"></th>
-          </tr>
-        </tfoot>
-
+          ";
+        }
+        echo "
         <thead class=\"w3-yellow\">
           <th colspan=\"12\">Total / Jumlah Keseluruhan (Upah, Lembur dan Total Pendapatan) Mingguan</th>
           <th>Rp <i class=\"w3-right\">$rp_hasil_upah</i></th>
