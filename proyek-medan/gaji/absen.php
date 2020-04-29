@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <style media="screen">
+  <style media="screen, print">
   <?php
   include '../style/table-def.css';
   include '../style/master.css';
