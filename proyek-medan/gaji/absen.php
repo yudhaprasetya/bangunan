@@ -234,7 +234,8 @@
         }
         echo "
         <thead class=\"w3-yellow\">
-          <th colspan=\"3\">Jumlah Absen/Lembur</th>
+          <th colspan=\"2\">$yg_bergaji Orang</th>
+          <th>Jumlah</th>
           <th>$ming_abs/$ming_lem</th>
           <th>$sen_abs/$sen_lem</th>
           <th>$sel_abs/$sel_lem</th>
@@ -251,10 +252,6 @@
           <th>Rp <i class=\"w3-right\">$rp_hasil_gaji</i></th>
           <th></th>
         </thead>
-        <tr>
-          <th colspan=\"10\">Yang Bekerja Minggu Ini Sebanyak $yg_bergaji orang</th>
-          <th colspan=\"9\">Yang Tidak Bekerja Minggu Ini Sebanyak $abai orang</th>
-        </tr>
         ";
         echo "</table>";
       }
