@@ -20,6 +20,7 @@
     <h2>Update 2</h2>
     <a href="/proyek-medan/">Proyek Bangunan Gg Kasih - Medan</a>
 
+
     <script src="/scripts/install.js"></script>
 </body>
 </html>
