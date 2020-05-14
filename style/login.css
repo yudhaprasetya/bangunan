@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: Verdana,sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: darkslategray;
+  width: 100%;
+  color: aliceblue;
+}
+
+.main {
+  margin: auto;
+  width: 480px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+select {
+  font-size: 42px;
+  width: 100%;
+}
+
+input[type=password] {
+  margin: 10px 0;
+  font-size: 42px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  padding: 10px 0;
+  margin: 10px 0;
+  font-size: 42px;
+  width: 100%;
+  background-color: darkslategray;
+  border-radius: 4px;
+  color: aliceblue;
+}
+
+input[type=submit]:hover {
+  background-color: darkslateblue;
+  color: aliceblue;
+}
