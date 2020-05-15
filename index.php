@@ -1,9 +1,9 @@
 <?php
 session_start();
-if(!isset($_SESSION['username'])) {
-  header('location:/users/');
+if(!isset($_SESSION['userp'])) {
+  header('location:/users/auth');
 } else {
-  $username = $_SESSION['username'];
+  $userp = $_SESSION['userp'];
 }
 ?>
 

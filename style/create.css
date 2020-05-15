@@ -4,46 +4,37 @@ body {
 }
 
 header {
-  text-align: center;
-  padding: 20px 0;
   background-color: darkslategray;
-  width: 100%;
+  text-align: center;
+  padding: 32px 0;
   color: aliceblue;
+  font-size: 24px;
 }
 
 .main {
-  margin: auto;
   width: 480px;
-  text-align: center;
   padding: 20px 0;
+  margin: auto;
 }
 
-select {
-  font-size: 42px;
-  width: 100%;
-}
-
-input[type=password] {
-  margin: 10px 0;
-  font-size: 42px;
-  text-align: center;
-  width: 100%;
+input[type=text],[type=password],[type=email],[type=date] {
   box-sizing: border-box;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 14px;
 }
 
 input[type=submit] {
-  padding: 10px 0;
-  margin: 10px 0;
-  font-size: 42px;
-  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border: 1px solid aliceblue;
   background-color: darkslategray;
-  border-radius: 4px;
   color: aliceblue;
 }
 
 input[type=submit]:hover {
-  background-color: darkslateblue;
-  color: aliceblue;
+  background-color: dimgray;
 }
 
 @media screen and (max-width: 640px) {

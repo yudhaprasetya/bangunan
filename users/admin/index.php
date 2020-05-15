@@ -2,11 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Proyek Bangunan - </title>
   </head>
   <body>
-
-    <p>404 - HALAMAN TIDAK DITEMUKAN</p>
 
   </body>
 </html>

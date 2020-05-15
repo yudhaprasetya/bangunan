@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: Verdana,sans-serif;
+  font-size: 12px;
+}
+
+table, th, td {
+  border: 1px solid darkslategray;
+  font-family: Verdana,sans-serif;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 4px 8px;
+  white-space: nowrap;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+}
