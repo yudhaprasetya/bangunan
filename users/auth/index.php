@@ -1,9 +1,9 @@
 <?php
-require_once("../../config/conn.php");
 session_start();
 if(isset($_SESSION['userp'])) {
   header('location:/');
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -26,14 +26,30 @@ if(isset($_SESSION['userp'])) {
   <form class="" action="proses.php" method="post">
 
     <div class="main">
-      <select class="" name="nm_proyek">
-        <option value="">Pilih Nama Proyek</option>
-      </select>
+      <?php
+      require_once("../../config/conn.php");
+      $sql = "SELECT * FROM nama_proyek ORDER BY nm_proyek ASC";
+      $result = $conn->query($sql);
+
+      echo "
+      <select class=\"\" name=\"nm_proyek\">
+      <option>Silahkan Pilih Nama Proyek</option>
+      ";
+
+      while ($row = $result->fetch_assoc()) {
+        // code...
+        echo "
+          <option value=".$row["nm_proyek"].">".$row["nm_proyek"]."</option>
+        ";
+      }
+
+      echo "</select>";
+
+      ?>
 
       <input type="password" name="userp" value="" placeholder="Password / PIN">
       <input type="submit" name="login" value="( Masuk )">
     </div>
   </form>
-
 </body>
 </html>

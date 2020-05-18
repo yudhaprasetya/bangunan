@@ -14,7 +14,7 @@ if(!isset($_SESSION['userp'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyek Bangunan</title>
 
-  <style media="screen">
+  <style media="screen, proyek">
     <?php include 'style/master.css'; ?>
   </style>
 </head>
