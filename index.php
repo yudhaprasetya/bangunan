@@ -1,10 +1,12 @@
 <?php
+/*
 session_start();
 if(!isset($_SESSION['userp'])) {
   header('location:/users/auth');
 } else {
   $userp = $_SESSION['userp'];
 }
+*/
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +16,7 @@ if(!isset($_SESSION['userp'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyek Bangunan</title>
 
-  <style media="screen, proyek">
+  <style media="screen">
     <?php include 'style/master.css'; ?>
   </style>
 </head>
